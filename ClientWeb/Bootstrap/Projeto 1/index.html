@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banda Pitty</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #343a40;
+        }
+        #video-player {
+            margin-top: 30px;
+        }
+        #contact-form {
+            margin-top: 50px;
+        }
+        #band-photo {
+            margin-top: 50px;
+        }
+        .btn-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Banda Pitty</h1>
+        
+        <!-- Player de vídeo responsivo -->
+        <div id="video-player" class="text-center">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/66PrK9b_WD8" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Foto da Banda -->
+        <div id="band-photo" class="text-center">
+            <img src="pit banda.jpg" class="img-fluid" alt="Foto da Banda Pitty">
+        </div>
+
+        <!-- Formulário de Contato -->
+        <div id="contact-form" class="mt-5">
+            <h2 class="text-center">Contato</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+
+        <!-- Link para a página de shows e artigos -->
+        <div class="text-center btn-container">
+            <a href="shows.html" class="btn btn-secondary">Veja os locais dos próximos shows</a>
+            <a href="artigos.html" class="btn btn-secondary">Leia nossos artigos</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
